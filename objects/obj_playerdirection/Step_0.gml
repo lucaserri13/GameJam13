@@ -11,6 +11,7 @@ if obj_player.charging
 }
 	else
 	{
+		if not global.collapse
 		instance_create_depth(x, y, obj_player.depth + 20, obj_crack)
 		 obj_player.x = obj_player.x + xadd;
 		 obj_player.y = obj_player.y + yadd;
