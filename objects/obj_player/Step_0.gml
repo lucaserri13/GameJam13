@@ -22,3 +22,10 @@ if (_hspd != 0 || _vspd != 0)
 }
 
 #endregion
+
+if alarmcheck
+if !mouse_check_button(mb_left)
+{
+	cancharge = 1
+	alarmcheck = 0
+}

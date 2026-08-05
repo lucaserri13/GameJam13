@@ -1,0 +1,1 @@
+alarmcheck = 1
