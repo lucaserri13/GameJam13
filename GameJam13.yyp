@@ -38,7 +38,7 @@
     {"id":{"name":"obj_playerdirection","path":"objects/obj_playerdirection/obj_playerdirection.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"rm_template","path":"rooms/rm_template/rm_template.yy",},},
-    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
+    {"id":{"name":"scr_script","path":"scripts/scr_script/scr_script.yy",},},
     {"id":{"name":"spr_crack","path":"sprites/spr_crack/spr_crack.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_exit","path":"sprites/spr_exit/spr_exit.yy",},},
