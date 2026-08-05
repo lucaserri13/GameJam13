@@ -11,10 +11,12 @@ if obj_player.charging
 }
 	else
 	{
-		if not global.collapse
-		instance_create_depth(x, y, obj_player.depth + 20, obj_crack)
+		
 		 obj_player.x = obj_player.x + xadd;
 		 obj_player.y = obj_player.y + yadd;
 		 distance = 0
 		instance_destroy()
 	}
+	
+if place_meeting(x, y, obj_enemy) image_blend = c_yellow
+else image_blend = c_white
