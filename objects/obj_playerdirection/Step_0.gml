@@ -19,4 +19,5 @@ if obj_player.charging
 	}
 	
 if place_meeting(x, y, obj_enemy) image_blend = c_yellow
+else if place_meeting(x, y, obj_enemy_stronger) image_blend = c_aqua
 else image_blend = c_white

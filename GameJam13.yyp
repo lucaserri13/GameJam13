@@ -36,6 +36,7 @@
   "resources":[
     {"id":{"name":"obj_crack","path":"objects/obj_crack/obj_crack.yy",},},
     {"id":{"name":"obj_debugger","path":"objects/obj_debugger/obj_debugger.yy",},},
+    {"id":{"name":"obj_enemy_stronger","path":"objects/obj_enemy_stronger/obj_enemy_stronger.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_exit","path":"objects/obj_exit/obj_exit.yy",},},
     {"id":{"name":"obj_ghost","path":"objects/obj_ghost/obj_ghost.yy",},},
@@ -47,6 +48,7 @@
     {"id":{"name":"rm_template","path":"rooms/rm_template/rm_template.yy",},},
     {"id":{"name":"scr_script","path":"scripts/scr_script/scr_script.yy",},},
     {"id":{"name":"spr_crack","path":"sprites/spr_crack/spr_crack.yy",},},
+    {"id":{"name":"spr_enemy_stronger","path":"sprites/spr_enemy_stronger/spr_enemy_stronger.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_exit","path":"sprites/spr_exit/spr_exit.yy",},},
     {"id":{"name":"spr_ghost","path":"sprites/spr_ghost/spr_ghost.yy",},},
