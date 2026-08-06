@@ -1,6 +1,9 @@
 if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 {
-	canhit = 0
+
+	obj_player.cangethit = 0
+	obj_player.alarm[1] = 30
+	
 	alarm[0] = 30
 	
 	if enemyhealth != 1 

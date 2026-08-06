@@ -1,4 +1,4 @@
-if !obj_enemy_stronger.canhit exit
+if !cangethit exit
 
 if global.collapse
 global.collapse = 0

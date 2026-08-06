@@ -1,5 +1,9 @@
 if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
-instance_destroy(self)
+{
+	obj_player.cangethit = 0
+	obj_player.alarm[1] = 30
+	instance_destroy(self)
+}
 
 var _speed = 2
 if global.chargeslowdown _speed = _speed/2
