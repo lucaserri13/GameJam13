@@ -1,13 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_turret",
+  "%Name":"obj_flood",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_turret",
+  "name":"obj_flood",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemies",
@@ -32,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_turret",
-    "path":"sprites/spr_turret/spr_turret.yy",
+    "name":"spr_flood",
+    "path":"sprites/spr_flood/spr_flood.yy",
   },
   "spriteMaskId":null,
   "visible":true,

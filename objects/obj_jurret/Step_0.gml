@@ -1,3 +1,16 @@
+if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
+{
+		show_message("test")
+	obj_player.cangethit = 0
+	obj_player.alarm[1] = 30
+		
+	if turrethealth != 1 
+	turrethealth--	
+	else instance_destroy(self)
+}
+
+
+
 var _timedecreaserate = 2
 image_blend = c_white
 if global.chargeslowdown
@@ -7,7 +20,7 @@ if global.chargeslowdown
 
 if global.collapse
 { 
-	instance_create_layer(xstart, ystart, "Enemies", obj_turret_stronger)
+	instance_create_layer(xstart, ystart, "Enemies", obj_furret_stronger)
 	instance_destroy(self)
 }
 
