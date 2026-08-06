@@ -2,7 +2,7 @@ if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 {
 		show_message("test")
 	obj_player.cangethit = 0
-	obj_player.alarm[1] = 30
+	obj_player.alarm[1] = 40
 		
 	if turrethealth != 1 
 	turrethealth--	

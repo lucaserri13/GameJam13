@@ -16,17 +16,16 @@ if obj_player.charging
 		 obj_player.y = obj_player.y + yadd;
 		 distance = 0
 		 
-		 if not (place_meeting(x, y, obj_enemy) 
-		or place_meeting(x, y, obj_enemy_stronger))
-		and not global.collapse 
-		{
+		
+		 
+		
+		if not global.collapse 
 		instance_create_depth(x, y, obj_player.depth + 20, obj_crack)
-		}
 		else obj_player.alarm[0] = 30	
 		
 		instance_destroy()
 	}
 	
-if place_meeting(x, y, obj_enemy) image_blend = c_yellow
-else if place_meeting(x, y, obj_enemy_stronger) image_blend = c_aqua
+if place_meeting(x, y, obj_enemy) or place_meeting(x, y, obj_furret)image_blend = c_yellow
+else if place_meeting(x, y, obj_enemy_stronger) or  place_meeting(x, y, obj_furret_stronger) image_blend = c_aqua
 else image_blend = c_white
