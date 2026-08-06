@@ -15,5 +15,5 @@ if distance_to_object(obj_player) <= 500 and canshoot
 {
 	instance_create_layer(x, y, "Enemies", obj_bullet)
 	canshoot = 0
-	shoottimer = 60*3
+	shoottimer = 60*4
 }

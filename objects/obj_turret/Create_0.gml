@@ -1,2 +1,2 @@
 canshoot = 1
-shoottimer = 60*3
+shoottimer = 60*4
