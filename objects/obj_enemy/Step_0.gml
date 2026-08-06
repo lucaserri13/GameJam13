@@ -5,7 +5,9 @@ var _speed = 2
 if global.chargeslowdown _speed = _speed/2
 
 if instance_exists(obj_player)
+if distance_to_object(obj_player) <= 500
 move_towards_point(obj_player.x, obj_player.y, _speed )
+else speed = 0
 
 if global.collapse
 { 
