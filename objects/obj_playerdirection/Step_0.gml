@@ -19,7 +19,7 @@ if obj_player.charging
 		
 		 
 		
-		if not global.collapse 
+		if not place_meeting(x, y, obj_enemy) and not place_meeting(x, y, obj_furret) and not global.collapse
 		instance_create_depth(x, y, obj_player.depth + 20, obj_crack)
 		else obj_player.alarm[0] = 30	
 		
