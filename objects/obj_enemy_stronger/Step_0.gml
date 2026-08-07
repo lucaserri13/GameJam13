@@ -6,7 +6,11 @@ if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 		
 	if enemyhealth != 1 
 	enemyhealth--	
-	else instance_destroy(self)
+	else
+	{
+		global.points += 2
+		instance_destroy(self)
+	}
 }
 
 

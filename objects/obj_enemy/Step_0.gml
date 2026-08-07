@@ -2,7 +2,8 @@ if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 {
 	obj_player.cangethit = 0
 	obj_player.alarm[1] = 40
-	instance_destroy(self)
+	global.points += 1
+	instance_destroy(self)	
 }
 
 var _speed = 2

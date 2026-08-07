@@ -5,7 +5,11 @@ if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 		
 	if strongturrethealth != 1 
 	strongturrethealth--	
-	else instance_destroy(self)
+	else 
+	{
+		global.points += 4
+		instance_destroy(self)
+	}
 }
 
 
