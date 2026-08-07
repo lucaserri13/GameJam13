@@ -21,6 +21,24 @@ if (_hspd != 0 || _vspd != 0)
     y = y + _yadd;
 }
 
+	#region Bounds.
+
+	var _bounds = 32
+	if x >= room_width - _bounds 
+	x = room_width - _bounds 
+
+	if x <= _bounds
+	x = _bounds
+
+
+	if y >= room_height - _bounds
+	y = room_height - _bounds
+
+	if y <= _bounds
+	y = _bounds
+
+	#endregion
+
 #endregion
 
 if alarmcheck

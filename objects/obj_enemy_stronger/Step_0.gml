@@ -24,8 +24,8 @@ if global.chargeslowdown _bouncespeed = _bouncespeed/2
 speed = _bouncespeed
 
 var _bouncedistance = 32
-if x >= room_width - 32 or x <= 32
+if x >= room_width - _bouncedistance or x <= _bouncedistance
 hspeed = -hspeed
 
-if y >= room_height - 32 or y <= 32
+if y >= room_height - _bouncedistance or y <= _bouncedistance
 vspeed = -vspeed

@@ -1,3 +1,5 @@
+if room = rm_intermission exit
+
 if global.collapse
 image_alpha = 255
 	else
