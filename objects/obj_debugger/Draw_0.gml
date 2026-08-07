@@ -9,6 +9,7 @@ draw_text(_debugx, _debugy - (_offset * 2), "Charge Further: " + string(global.c
 draw_text(_debugx, _debugy - _offset, "Recover Faster: " + string(global.recoverfaster))
 draw_text(_debugx, _debugy + _offset, "Alarm: " + string(obj_player.alarm[0]))
 draw_text(_debugx, _debugy + (_offset * 2), "Points: " + string(global.points))
+draw_text(_debugx + _offset, _debugy, "Nível próximo: " + string(global.nextlevel))
 
 draw_set_halign(0)
 draw_set_valign(0)
