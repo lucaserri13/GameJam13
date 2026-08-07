@@ -1,3 +1,5 @@
+if !cangethit exit
+
 if global.collapse
 global.collapse = 0
 
