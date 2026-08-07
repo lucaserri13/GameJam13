@@ -36,6 +36,7 @@
   "resources":[
     {"id":{"name":"obj_bullet_stronger","path":"objects/obj_bullet_stronger/obj_bullet_stronger.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
+    {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"obj_chaser","path":"objects/obj_chaser/obj_chaser.yy",},},
     {"id":{"name":"obj_crack","path":"objects/obj_crack/obj_crack.yy",},},
     {"id":{"name":"obj_debugger","path":"objects/obj_debugger/obj_debugger.yy",},},
@@ -54,6 +55,7 @@
     {"id":{"name":"rm_template","path":"rooms/rm_template/rm_template.yy",},},
     {"id":{"name":"scr_script","path":"scripts/scr_script/scr_script.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
+    {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_chaser","path":"sprites/spr_chaser/spr_chaser.yy",},},
     {"id":{"name":"spr_crack","path":"sprites/spr_crack/spr_crack.yy",},},
     {"id":{"name":"spr_enemy_stronger","path":"sprites/spr_enemy_stronger/spr_enemy_stronger.yy",},},
