@@ -30,6 +30,7 @@
     {"$GMObjectProperty":"v2","%Name":"chargefaster","filters":[],"listItems":[],"multiselect":false,"name":"chargefaster","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"chargefurther","filters":[],"listItems":[],"multiselect":false,"name":"chargefurther","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"recoverfaster","filters":[],"listItems":[],"multiselect":false,"name":"recoverfaster","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"runfaster","filters":[],"listItems":[],"multiselect":false,"name":"runfaster","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

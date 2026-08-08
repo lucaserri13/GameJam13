@@ -1,5 +1,8 @@
+sprite_index = spr_turret_stronger
+
 if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 {
+	sprite_index = spr_playerdirection
 	obj_player.cangethit = 0
 	obj_player.alarm[1] = 40
 		
@@ -7,7 +10,7 @@ if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 	strongturrethealth--	
 	else 
 	{
-		global.points += 4
+		global.temporarypoints += 4
 		instance_destroy(self)
 	}
 }

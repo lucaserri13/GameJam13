@@ -34,9 +34,9 @@ if obj_player.charging
 		 
 		
 		 
-		if not room = rm_intermission
+		if room != rm_intermission
 		{
-			if not place_meeting(x, y, obj_enemy) and not place_meeting(x, y, obj_furret) and not global.collapse
+			if global.collapse = 0
 			instance_create_depth(x, y, obj_player.depth + 20, obj_crack)
 			else
 			{

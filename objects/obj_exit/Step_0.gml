@@ -1,4 +1,4 @@
-if room = rm_intermission exit
+if room = rm_intermission or room = rm_finale exit
 
 if global.collapse
 image_alpha = 255

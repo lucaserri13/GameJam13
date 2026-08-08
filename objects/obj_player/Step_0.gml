@@ -10,6 +10,8 @@ var _vspd = _down - _up;
 if (_hspd != 0 || _vspd != 0)
 {
     var _spd = 4;
+	if global.runfaster
+	_spd = 5
 	
 	// Caso o player esteja carregando um dash, ele fica parado
 	if charging

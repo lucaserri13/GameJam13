@@ -1,6 +1,9 @@
+sprite_index = spr_enemy_stronger
+
+
 if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 {
-
+	sprite_index = spr_playerdirection
 	obj_player.cangethit = 0
 	obj_player.alarm[1] = 40
 		
@@ -8,7 +11,7 @@ if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 	enemyhealth--	
 	else
 	{
-		global.points += 2
+		global.temporarypoints += 2	
 		instance_destroy(self)
 	}
 }

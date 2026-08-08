@@ -1,8 +1,14 @@
+
+
 if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 {
 	obj_player.cangethit = 0
 	obj_player.alarm[1] = 40
-	global.points += 1
+	global.temporarypoints++
+	
+	if room = rm_finale
+	global.killobjective++
+	
 	instance_destroy(self)	
 }
 

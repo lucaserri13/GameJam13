@@ -1,0 +1,1 @@
+global.killobjective = 24

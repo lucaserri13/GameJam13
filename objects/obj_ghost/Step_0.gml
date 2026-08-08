@@ -1,4 +1,4 @@
-var _speed = 1
+var _speed = 0.5
 
 
 if instance_exists(obj_player)

@@ -1,5 +1,8 @@
+sprite_index = spr_turret
+
 if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 {
+	sprite_index = spr_playerdirection
 	obj_player.cangethit = 0
 	obj_player.alarm[1] = 40
 		
@@ -7,7 +10,11 @@ if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 	turrethealth--	
 	else 
 	{
-		global.points += 3
+		global.temporarypoints += 3
+		
+		if room = rm_finale
+		global.killobjective++
+	
 		instance_destroy(self)	
 	}
 }
