@@ -1,3 +1,4 @@
+randomise()
 global.collapse = 0
 global.chargeslowdown = 0
 global.chargefaster = 0

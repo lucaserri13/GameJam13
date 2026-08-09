@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_music",
+  "%Name":"snd_music4",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -8,19 +8,19 @@
   "bitDepth":0,
   "channelFormat":0,
   "compression":0,
-  "compressionQuality":0,
+  "compressionQuality":4,
   "conversionMode":0,
-  "duration":311.30133,
+  "duration":204.4082,
   "exportDir":"",
-  "name":"snd_music",
+  "name":"snd_music4",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":5512,
-  "soundFile":"snd_music.mp3",
+  "soundFile":"snd_music4.mp3",
   "volume":1.0,
 }

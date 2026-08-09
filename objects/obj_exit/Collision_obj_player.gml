@@ -1,11 +1,14 @@
 if image_alpha != 0
 {
-audio_stop_sound(snd_music)
+audio_stop_sound(snd_music1)
 
 global.points += global.temporarypoints
 
-if global.points >= 0
+if global.points > 0
 global.points -= (global.deaths * 2)
+
+if global.points <= 0
+global.points = 0
 
 global.temporarypoints = 0
 global.deaths = 0
