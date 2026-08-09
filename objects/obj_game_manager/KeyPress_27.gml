@@ -10,4 +10,5 @@ global.collapse = 0
 	global.killobjective = 0
 	global.nextlevel = 0
 	global.totaldeaths = 0
+	audio_stop_sound(snd_music)
 	room_goto(rm_main_menu)

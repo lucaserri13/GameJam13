@@ -45,7 +45,7 @@ if obj_player.charging
 				obj_player.alarm[0] = 15
 			}
 		}
-		
+		instance_create_layer(obj_player.x, obj_player.y, "Enemies", obj_explosion)
 		instance_destroy()
 	}
 	

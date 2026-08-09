@@ -1,6 +1,7 @@
 if image_alpha != 0
-
 {
+audio_stop_sound(snd_music)
+
 global.points += global.temporarypoints
 
 if global.points >= 0
