@@ -6,11 +6,15 @@ if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 	obj_player.cangethit = 0
 	obj_player.alarm[1] = 40
 		
-	if turrethealth != 1 
-	turrethealth--	
+	if turrethealth != 1
+	{
+	audio_play_sound(snd_hitenemy, 20, 0, 1, 0, random_range(0.9, 1.1))
+	turrethealth--
+	}
 	else 
 	{
 		global.temporarypoints += 3
+		audio_play_sound(snd_killenemy, 25, 0, 1, 0, random_range(0.9, 1.1))
 		
 		if room = rm_finale
 		global.killobjective++
@@ -42,6 +46,7 @@ else canshoot = 1
 if instance_exists(obj_player)
 if distance_to_object(obj_player) <= 500 and canshoot
 {
+	audio_play_sound(snd_turretshoot, 10, 0, 1, 0, random_range(0.9, 1.1))
 	instance_create_layer(x, y, "Enemies", obj_bullet)
 	canshoot = 0
 	shoottimer = 60*4

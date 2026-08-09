@@ -34,7 +34,7 @@ if obj_player.charging
 		 
 		
 		 
-		if room != rm_intermission
+		if room != rm_intermission and room != rm_finale
 		{
 			if global.collapse = 0
 			instance_create_depth(x, y, obj_player.depth + 20, obj_crack)

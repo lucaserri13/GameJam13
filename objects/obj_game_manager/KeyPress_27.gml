@@ -1,0 +1,13 @@
+global.collapse = 0
+	global.chargeslowdown = 0
+	global.chargefaster = 0
+	global.chargefurther = 0
+	global.recoverfaster = 0
+	global.runfaster = 0
+	global.points = 0
+	global.temporarypoints = 0
+	global.deaths = 0
+	global.killobjective = 0
+	global.nextlevel = 0
+	global.totaldeaths = 0
+	room_goto(rm_main_menu)

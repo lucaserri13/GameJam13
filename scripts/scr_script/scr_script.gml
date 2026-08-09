@@ -10,3 +10,4 @@ global.deaths = 0
 global.killobjective = 0
 global.nextlevel = 0
 global.totaldeaths = 0
+global.tutorial = 1
