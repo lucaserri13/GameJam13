@@ -27,7 +27,8 @@ else image_index = 1
 
 move_bounce_solid(0)
 
-if distance_to_object(obj_wall) <= 3 or distance_to_object(obj_enemy_wall) <= 6
+if distance_to_object(obj_wall) <= 4 or distance_to_object(obj_enemy_wall) <= 4
+if distance_to_object(obj_player) <= 550
 audio_play_sound(snd_strongbounce, 10, 0, 0.8, 0, random_range(0.9, 1.1))
 
 var _bouncespeed = 6
@@ -37,12 +38,14 @@ speed = _bouncespeed
 var _bouncedistance = 32
 if x >= room_width - _bouncedistance or x <= _bouncedistance
 {
+if distance_to_object(obj_player) <= 550
 audio_play_sound(snd_strongbounce, 0, 0, 0.8, 0, random_range(0.9, 1.1))
 hspeed = -hspeed
 }
 
 if y >= room_height - _bouncedistance or y <= _bouncedistance
 {
+if distance_to_object(obj_player) <= 550
 audio_play_sound(snd_strongbounce, 0, 0, 1, 0, random_range(0.9, 1.1))
 vspeed = -vspeed
 }
