@@ -19,11 +19,11 @@ draw_text_transformed_colour(x, (y - _up),"5 Pontos", 1.2, 1.2, 0, c_white, c_wh
 else if recoverfaster
 {
 draw_text_transformed_colour(x, (y - _up) - 40,"Cooldown Menor", 1.5, 1.5, 0, c_white, c_white, c_white, c_white, 255)
-draw_text_transformed_colour(x, (y - _up),"20 Points", 1.2, 1.2, 0, c_white, c_white, c_white, c_white, 255)
+draw_text_transformed_colour(x, (y - _up),"20 Pontos", 1.2, 1.2, 0, c_white, c_white, c_white, c_white, 255)
 }
 
 else if runfaster
 {
 draw_text_transformed_colour(x, (y - _up) - 40,"Mais Velocidade", 1.5, 1.5, 0, c_white, c_white, c_white, c_white, 255)
-draw_text_transformed_colour(x, (y - _up),"10 Points", 1.2, 1.2, 0, c_white, c_white, c_white, c_white, 255)
+draw_text_transformed_colour(x, (y - _up),"10 Pontos", 1.2, 1.2, 0, c_white, c_white, c_white, c_white, 255)
 }
