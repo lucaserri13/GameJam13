@@ -1,6 +1,7 @@
 sprite_index = spr_enemy_stronger
 
-
+if instance_exists(obj_camerafollow)
+if !obj_camerafollow.inside
 if not obj_player.charging and (place_meeting(x, y, obj_camerafollow) or place_meeting(x, y, obj_playerdirection))
 {
 	sprite_index = spr_playerdirection

@@ -4,6 +4,8 @@ if shoottimer <= 60
 image_blend = c_black
 else image_blend = c_white
 
+if instance_exists(obj_camerafollow)
+if !obj_camerafollow.inside
 if not obj_player.charging and (place_meeting(x, y, obj_camerafollow) or place_meeting(x, y, obj_playerdirection))
 {
 	sprite_index = spr_playerdirection

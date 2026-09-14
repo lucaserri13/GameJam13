@@ -22,11 +22,8 @@ if (_hspd != 0 || _vspd != 0)
 	
     var _dir = point_direction(0, 0, _hspd, _vspd);
     var _xadd = lengthdir_x(_spd, _dir);
-    var _yadd = lengthdir_y(_spd, _dir);
-    x = x + _xadd;
-    y = y + _yadd;
-	
-
+    var _yadd = lengthdir_y(_spd, _dir);	
+	move_and_collide(_xadd, _yadd, obj_wall)
 }
 
 	
@@ -57,3 +54,4 @@ if !mouse_check_button(mb_left)
 	cancharge = 1
 	alarmcheck = 0
 }
+

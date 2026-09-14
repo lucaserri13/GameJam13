@@ -3,7 +3,8 @@ sprite_index = spr_turret_stronger
 if strongturrethealth = 2 image_alpha = 0.5
 else if strongturrethealth = 1 image_alpha = 0.25
 
-
+if instance_exists(obj_camerafollow)
+if !obj_camerafollow.inside
 if not obj_player.charging and (place_meeting(x, y, obj_camerafollow) or place_meeting(x, y, obj_playerdirection))
 {
 	sprite_index = spr_playerdirection

@@ -28,11 +28,14 @@ if obj_player.charging
 	image_xscale += 0.1 * _gofast
 	
 }
-	else
+	else 
 	{
-
+		 if !obj_camerafollow.inside
+		 {
 		 obj_player.x = obj_player.x + xadd;
 		 obj_player.y = obj_player.y + yadd;
+		 }
+		 
 		 distance = 0
 		 
 		
@@ -40,7 +43,10 @@ if obj_player.charging
 		if room != rm_intermission and room != rm_finale
 		{
 			if global.collapse = 0
-			instance_create_depth(x, y, obj_player.depth + 20, obj_crack)
+			{
+				if !obj_camerafollow.inside
+				instance_create_depth(x, y, obj_player.depth + 20, obj_crack)
+			}
 			else
 			{
 				obj_player.alarm[0] = 30	
@@ -48,13 +54,21 @@ if obj_player.charging
 				obj_player.alarm[0] = 15
 			}
 		}
+		
+		if !obj_camerafollow.inside
+		{
 		instance_create_layer(obj_player.x, obj_player.y, "Enemies", obj_explosion)
 		instance_create_layer(x, y, "Enemies", obj_explosion)
 		instance_create_layer(x, y, "Player", obj_dash, {dashscale : image_xscale,
 																   dashrotate: image_angle})
+		}
+		
 		instance_destroy()
 	}
-	
+
+if !obj_camerafollow.inside
+{
 if place_meeting(x, y, obj_enemy) or place_meeting(x, y, obj_furret) or place_meeting(x, y, obj_enemy_stronger) or  place_meeting(x, y, obj_furret_stronger) image_blend = c_yellow
+}
 else image_blend = c_white
 
