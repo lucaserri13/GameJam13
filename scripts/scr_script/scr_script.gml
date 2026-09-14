@@ -12,3 +12,7 @@ global.killobjective = 0
 global.nextlevel = 0
 global.totaldeaths = 0
 global.tutorial = 1
+global.camerafollows = 0
+global.checkpointy = 0
+global.checkpointx = 0
+global.objectivesaved = 0

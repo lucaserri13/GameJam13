@@ -1,6 +1,6 @@
 
 
-if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
+if not obj_player.charging and (place_meeting(x, y, obj_camerafollow) or place_meeting(x, y, obj_playerdirection))
 {
 	obj_player.cangethit = 0
 	obj_player.alarm[1] = 40
@@ -23,6 +23,6 @@ else speed = 0
 
 if global.collapse
 { 
-	instance_create_layer(xstart, ystart, "Enemies", obj_enemy_stronger)
+	instance_create_layer(xstart, ystart, "Enemies", obj_enemyturning)
 	instance_destroy(self)
 }

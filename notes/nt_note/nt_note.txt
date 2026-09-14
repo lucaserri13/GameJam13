@@ -1,20 +1,6 @@
-96
-1536
+COISAS PARA FAZER:
 
-608
-1536
-
-160
-1216
-
-640
-1216
-
-224
-672
-
-192
-160
-
-192
-224
+Esclarecer que torretas não dão dano de contato
+Mencionar o slow-motion
+Deixar mais claro a diferença entre o buraco do player e o buraco do mapa
+fazer a camera seguir levemente o dash para mostrar os arredores do local onde o player estará pós dash

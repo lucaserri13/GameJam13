@@ -2,13 +2,11 @@ if image_alpha != 0
 {
 audio_stop_all()
 
-global.points += global.temporarypoints
+var _results = global.temporarypoints - global.deaths
+if _results <= 0
+_results = 0
 
-if global.points > 0
-global.points -= (global.deaths * 2)
-
-if global.points <= 0
-global.points = 0
+global.points += _results
 
 global.temporarypoints = 0
 global.deaths = 0

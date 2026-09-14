@@ -1,4 +1,4 @@
-var _projectilespeed = 25
+var _projectilespeed = 35
 
 
 if global.chargeslowdown

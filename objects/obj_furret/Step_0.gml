@@ -1,6 +1,10 @@
 sprite_index = spr_turret
 
-if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
+if shoottimer <= 60
+image_blend = c_black
+else image_blend = c_white
+
+if not obj_player.charging and (place_meeting(x, y, obj_camerafollow) or place_meeting(x, y, obj_playerdirection))
 {
 	sprite_index = spr_playerdirection
 	obj_player.cangethit = 0
@@ -9,11 +13,12 @@ if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 	if turrethealth != 1
 	{
 	audio_play_sound(snd_hitenemy, 20, 0, 1, 0, random_range(0.9, 1.1))
+	image_alpha = image_alpha/2
 	turrethealth--
 	}
 	else 
 	{
-		global.temporarypoints += 3
+		global.temporarypoints += 2
 		audio_play_sound(snd_killenemy, 25, 0, 1, 0, random_range(0.9, 1.1))
 		
 		if room = rm_finale
@@ -26,7 +31,7 @@ if not obj_player.charging and place_meeting(x, y, obj_playerdirection)
 
 
 var _timedecreaserate = 2
-image_blend = c_white
+
 if global.chargeslowdown
 {
 	_timedecreaserate = 1.5
@@ -34,7 +39,9 @@ if global.chargeslowdown
 
 if global.collapse
 { 
-	instance_create_layer(xstart, ystart, "Enemies", obj_furret_stronger)
+	if turrethealth = 1
+	instance_create_layer(xstart, ystart, "Enemies", obj_furret_stronger, {strongturrethealth : 2})
+	else instance_create_layer(xstart, ystart, "Enemies", obj_furretturning)
 	instance_destroy(self)
 }
 

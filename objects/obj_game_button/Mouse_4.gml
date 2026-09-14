@@ -19,5 +19,8 @@ else
 	global.nextlevel = 0
 	global.totaldeaths = 0
 	global.tutorial = 0
+	global.checkpointy = 0
+	global.objectivesaved = 0
+	global.checkpointx = 0
 	room_goto(rm_main_menu)
 }

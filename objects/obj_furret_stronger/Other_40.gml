@@ -1,2 +1,2 @@
-bulletindicator = 0
-willshoot = 0
+//bulletindicator = 0
+//willshoot = 0

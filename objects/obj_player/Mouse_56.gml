@@ -1,3 +1,12 @@
+
+
+if cancel 
+{
+	cancel = 0
+	exit
+}
+
+
 if cancharge
 {
 global.chargeslowdown = 0

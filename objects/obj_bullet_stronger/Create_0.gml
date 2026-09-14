@@ -1,4 +1,4 @@
 var _inicialprojectilespeed = 30
 
 
-move_towards_point(global.playerpositionx, global.playerpositiony, _inicialprojectilespeed)
+move_towards_point(bulletx, bullety, _inicialprojectilespeed)

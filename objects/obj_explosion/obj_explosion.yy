@@ -8,8 +8,8 @@
   "name":"obj_explosion",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Enviroment",
+    "path":"folders/Objects/Enviroment.yy",
   },
   "parentObjectId":null,
   "persistent":false,

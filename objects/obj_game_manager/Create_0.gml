@@ -1,0 +1,1 @@
+fxtrigger = 0

@@ -1,1 +1,3 @@
-instance_create_depth(x, y, 0, obj_ghost)
+if !close
+instance_create_layer(x, y, "Enemies", obj_ghostspawning)
+instance_create_layer(x, y, "Enemies", obj_explosion)

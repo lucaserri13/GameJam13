@@ -11,7 +11,16 @@ if !_musicplaying
 audio_play_sound(_music, 100, 1, 1)
 }
 else audio_stop_sound(_music)
+
+if (room == rm_finale) and (global.checkpointy != 0)
+{
+y = global.checkpointy
+x = global.checkpointx 
+}
+
 charging = 0
 cancharge = 1
 alarmcheck = 0
 cangethit = 1
+cancel = 0
+

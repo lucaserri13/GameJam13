@@ -1,0 +1,2 @@
+if instance_exists(obj_playerdirection)
+obj_playerdirection.image_blend = c_yellow

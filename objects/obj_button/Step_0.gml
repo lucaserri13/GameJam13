@@ -17,7 +17,7 @@ else inside = 0
 if place_meeting(x, y, obj_player)
 {
 	image_index = 1	
-	if keyboard_check_pressed(ord("F"))
+	if keyboard_check_pressed(ord("F")) or mouse_check_button(mb_middle)
 	{
 		if chargefaster and global.points >= 15
 		{

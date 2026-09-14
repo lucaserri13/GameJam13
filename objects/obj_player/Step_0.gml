@@ -7,21 +7,29 @@ var _down = keyboard_check(ord("S"));
 var _hspd = _right - _left;
 var _vspd = _down - _up;
 
+var _spd = 4;
+if global.runfaster
+_spd = 5
+
+if charging
+	_spd = (_spd/2) - 1;
+
 if (_hspd != 0 || _vspd != 0)
 {
-    var _spd = 4;
-	if global.runfaster
-	_spd = 5
+
 	
 	// Caso o player esteja carregando um dash, ele fica parado
-	if charging
-	_spd = 0;
+	
     var _dir = point_direction(0, 0, _hspd, _vspd);
     var _xadd = lengthdir_x(_spd, _dir);
     var _yadd = lengthdir_y(_spd, _dir);
     x = x + _xadd;
     y = y + _yadd;
+	
+
 }
+
+	
 
 	#region Bounds.
 

@@ -10,8 +10,8 @@
   "name":"obj_crack",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Player.yy",
+    "name":"Enviroment",
+    "path":"folders/Objects/Enviroment.yy",
   },
   "parentObjectId":null,
   "persistent":false,
