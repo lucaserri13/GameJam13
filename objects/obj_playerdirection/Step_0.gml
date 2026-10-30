@@ -52,6 +52,12 @@ if obj_player.charging
 				obj_player.alarm[0] = 30	
 				if global.recoverfaster
 				obj_player.alarm[0] = 15
+				
+				if instance_exists(obj_camerafollow)
+				{
+				if obj_camerafollow.inside
+				obj_player.alarm[0] = 1
+				}
 			}
 		}
 		
